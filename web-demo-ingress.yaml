@@ -16,3 +16,10 @@ spec:
             name: web-demo-svc
             port:
               number: 80
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: api-demo-svc
+            port:
+              number: 80
